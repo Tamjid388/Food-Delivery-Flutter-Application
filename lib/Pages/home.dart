@@ -14,8 +14,10 @@ class _HomeState extends State<Home> {
       body:Container(
         margin: EdgeInsets.only(top: 50.0,left:10.0,right:10.0),
         child:Column(children: [
-        Text("Hello,Tamjid Ahmed",style: TextStyle(
-          color: Colors.black,fontSize: 20.0,fontWeight:FontWeight.bold 
+        Text("Hello,Tamjid Ahmed",
+        style: TextStyle(
+          color: Colors.black,fontSize: 20.0,
+          fontWeight:FontWeight.bold,fontFamily: "Poppins"
         ),)
       ],),),
     );
