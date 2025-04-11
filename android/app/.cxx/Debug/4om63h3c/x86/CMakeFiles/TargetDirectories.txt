@@ -1,0 +1,2 @@
+D:/kashish/Winter internship/Flutter/Flutter/Application/Interactive_App/food_delivery_app/android/app/.cxx/Debug/4om63h3c/x86/CMakeFiles/edit_cache.dir
+D:/kashish/Winter internship/Flutter/Flutter/Application/Interactive_App/food_delivery_app/android/app/.cxx/Debug/4om63h3c/x86/CMakeFiles/rebuild_cache.dir
