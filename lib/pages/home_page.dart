@@ -1,5 +1,21 @@
 
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:food_delivery_app/components/my_current_location.dart';
+import 'package:food_delivery_app/components/my_description_box.dart';
+import 'package:food_delivery_app/components/my_drawer.dart';
+import 'package:food_delivery_app/components/my_food_tile.dart';
+import 'package:food_delivery_app/components/my_sliver_app_bar.dart';
+import 'package:food_delivery_app/components/my_tab_bar.dart';
+import 'package:food_delivery_app/models/food.dart';
+import 'package:food_delivery_app/models/restauarant.dart';
+import 'package:food_delivery_app/pages/cart_page.dart';
+import 'package:food_delivery_app/pages/food_page.dart';
+import 'package:food_delivery_app/pages/profile_page.dart';
+import 'package:food_delivery_app/pages/settings_page.dart';
+import 'package:food_delivery_app/pages/profile_creation_page.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
