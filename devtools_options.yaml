@@ -1,3 +1,74 @@
-description: This file stores settings for Dart & Flutter DevTools.
-documentation: https://docs.flutter.dev/tools/devtools/extensions#configure-extension-enablement-states
-extensions:
+name: food_delivery_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.1+4003
+
+environment:
+  sdk: ^3.6.0
+dependencies:
+  flutter:
+    sdk: flutter
+  google_sign_in: ^6.3.0
+  flutter_launcher_icons: ^0.14.3
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  flutter_credit_card: ^4.1.0
+  intl: ^0.20.2
+  collection: ^1.19.1
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  lottie: ^3.3.1
+  cloud_firestore: ^5.6.5
+  smooth_page_indicator: ^1.2.1
+  shared_preferences: ^2.5.2
+  curved_navigation_bar: ^1.0.6
+  url_launcher: ^6.3.1
+  path_provider: ^2.1.5
+  pdf: ^3.11.3
+  permission_handler: ^11.4.0
+  open_file: ^3.5.10
+  image_picker: ^1.1.2
+  http: ^1.3.0
+  flutter_local_notifications: ^19.0.0
+  razorpay_flutter: 1.4.0
+  printing: ^5.12.0
+  universal_io: ^2.2.2
+  
+
+  
+
+
+dependency_overrides:
+  collection: ^1.19.1
+  path: ^1.9.1
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/bgmain.png"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/D_m.json
+    - assets/submitted.json
+    - assets/deli.json
+    - assets/f_r.json
+    - assets/O_W.json
+    - assets/profile_created.json
+    - assets/bg.svg
+    - assets/kd.png
+    - assets/bgmain.png
+    - assets/google.png
+    - assets/avatars/
+    - lib/images/Burger/
+    - lib/images/Desserts/
+    - lib/images/Drinks/
+    - lib/images/Pizza/
+    - lib/images/Salad/
+    - lib/images/Sides/
