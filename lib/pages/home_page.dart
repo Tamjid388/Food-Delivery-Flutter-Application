@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage>
     _checkFirstTimeUser();
   }
 
-  // Add first-time user check and redirect to ProfileCreationPage
+  // 
   Future<void> _checkFirstTimeUser() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     bool? isProfileCreated = prefs.getBool('isProfileCreated');
@@ -91,4 +91,59 @@ class _HomePageState extends State<HomePage>
   }
 }
 
-// ..........
+class HomeContent extends StatelessWidget {
+  const HomeContent({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+      length: FoodCatagory.values.length,
+      child: NestedScrollView(
+        headerSliverBuilder: (context, innerBoxIsScrolled) => [
+          MySliverAppBar(
+            title: MyTabBar(tabController: DefaultTabController.of(context)),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Divider(
+                  indent: 25,
+                  endIndent: 25,
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
+                MyCurrentLocation(),
+                const MyDescriptionBox(),
+              ],
+            ),
+          ),
+        ],
+        body: Consumer<Restauarant>(
+          builder: (context, restaurant, child) => TabBarView(
+            controller: DefaultTabController.of(context),
+            children: FoodCatagory.values.map((category) {
+              List<Food> categoryMenu = restaurant.menu
+                  .where((food) => food.catagory == category)
+                  .toList();
+              return ListView.builder(
+                itemCount: categoryMenu.length,
+                physics: const NeverScrollableScrollPhysics(),
+                padding: EdgeInsets.zero,
+                itemBuilder: (context, index) {
+                  final food = categoryMenu[index];
+                  return MyFoodTile(
+                    food: food,
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FoodPage(food: food),
+                      ),
+                    ),
+                  );
+                },
+              );
+            }).toList(),
+          ),
+        ),
+      ),
+    );
+  }
+}
