@@ -65,7 +65,7 @@ class AboutUs extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             const Text(
-              "    foodos is a modern food delivery platform committed to providing customers with a seamless and efficient way to enjoy their favorite meals. "
+              "    foodos is  a modern food delivery platform committed to a providing customers with a seamless and efficient way to enjoy their favorite meals. "
               "With a user-friendly interface and a vast selection of cuisines, we bring the best restaurants to your doorstep, ensuring a hassle-free dining experience from the comfort of your home.",
               textAlign: TextAlign.justify,
             ),
