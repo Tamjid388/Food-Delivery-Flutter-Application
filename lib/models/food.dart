@@ -38,4 +38,3 @@ class Food {
       required this.name,
     });
   } 
- 
