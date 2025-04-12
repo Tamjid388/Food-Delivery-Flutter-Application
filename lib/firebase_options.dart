@@ -41,13 +41,13 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCfPCBNgKdzbb4jbvAjJv5VtoPYNvnnOeE',
-    appId: '1:199960507699:web:15d703df070c8639b23a46',
-    messagingSenderId: '199960507699',
-    projectId: 'newe-71410',
-    authDomain: 'newe-71410.firebaseapp.com',
-    storageBucket: 'newe-71410.firebasestorage.app',
-    measurementId: 'G-ZR9ZBB9JT3',
+    apiKey: 'AIzaSyD3vJSDfB0D-26LEJp2aqF6qI5veRsz3tA',
+    appId: '1:938345348500:web:b9ee47cdbea68e3a01e381',
+    messagingSenderId: '938345348500',
+    projectId: 'foodos-59233',
+    authDomain: 'foodos-59233.firebaseapp.com',
+    storageBucket: 'foodos-59233.firebasestorage.app',
+    measurementId: 'G-D9FSKFQGDW',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -64,26 +64,28 @@ class DefaultFirebaseOptions {
     messagingSenderId: '938345348500',
     projectId: 'foodos-59233',
     storageBucket: 'foodos-59233.firebasestorage.app',
+    iosClientId: '938345348500-hcfqofeqd6303qbqitoudlkqg8csb4o8.apps.googleusercontent.com',
     iosBundleId: 'com.example.foodDeliveryApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBJFtU-Wtp3P_Ms3ZGiLXvvcyI88hjjnDo',
-    appId: '1:419173628101:ios:40e1d7d4df19a376fd18ac',
-    messagingSenderId: '419173628101',
-    projectId: 'kdserve-837ff',
-    storageBucket: 'kdserve-837ff.firebasestorage.app',
+    apiKey: 'AIzaSyBqNyiemlLmO4Fwyujq7SV656jHAWnyy0g',
+    appId: '1:938345348500:ios:cc9c236af21be2f601e381',
+    messagingSenderId: '938345348500',
+    projectId: 'foodos-59233',
+    storageBucket: 'foodos-59233.firebasestorage.app',
+    iosClientId: '938345348500-hcfqofeqd6303qbqitoudlkqg8csb4o8.apps.googleusercontent.com',
     iosBundleId: 'com.example.foodDeliveryApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCfPCBNgKdzbb4jbvAjJv5VtoPYNvnnOeE',
-    appId: '1:199960507699:web:a3907734ebfdf5f6b23a46',
-    messagingSenderId: '199960507699',
-    projectId: 'newe-71410',
-    authDomain: 'newe-71410.firebaseapp.com',
-    storageBucket: 'newe-71410.firebasestorage.app',
-    measurementId: 'G-ECB01487S3',
+    apiKey: 'AIzaSyD3vJSDfB0D-26LEJp2aqF6qI5veRsz3tA',
+    appId: '1:938345348500:web:4d482e5e321ba2f001e381',
+    messagingSenderId: '938345348500',
+    projectId: 'foodos-59233',
+    authDomain: 'foodos-59233.firebaseapp.com',
+    storageBucket: 'foodos-59233.firebasestorage.app',
+    measurementId: 'G-YC04P5RT4J',
   );
 
 }
