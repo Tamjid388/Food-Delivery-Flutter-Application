@@ -45,4 +45,4 @@ To get started with the Foodos app, follow these steps:
      ```bash
    flutter run
 
-Contribution test by Nahid
+Fixed commit email test by Nahid
