@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class IntroPage2 extends StatelessWidget {
-  const IntroPage2({super.key});
+class IntroPage3 extends StatelessWidget {
+  const IntroPage3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,21 +12,21 @@ class IntroPage2 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Lottie.asset(
-            'assets/f_r.json',
-            width: 250,
+            'assets/O_W.json',
+            width: 300,
             height: 300,
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
           ),
           const SizedBox(height: 20),
           const Text(
-            'Your Food is Ready ',
+            'You are on the way...',
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
-                    const SizedBox(height: 10),
+          const SizedBox(height: 10),
           const Padding(
-            padding: EdgeInsets.only(left: 23.0),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
-              'Get your food with full of Hygiene and Taste.',
+              'You are on the right path to get your food!',
               textAlign: TextAlign.center,
             ),
           ),
